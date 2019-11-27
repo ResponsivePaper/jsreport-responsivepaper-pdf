@@ -13,7 +13,7 @@
 
 ## Install into JsReport on Prem
 
-1. install into [jsreport](https://jsreport.net/on-prem) on premises
+1. install [jsreport](https://jsreport.net/on-prem) on premises
 2. open terminal in jsreport app folder
 3. `npm install jsreport-responsivepaper-pdf`
 4. get a free api key at https://responsivepaper.com
