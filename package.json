@@ -1,0 +1,52 @@
+{
+  "name": "jsreport-responsivepaper-pdf",
+  "version": "1.0.0",
+  "description": "jsreport recipe to connect to the responsivepaper.com html to pdf service",
+  "keywords": [
+    "jsreport",
+    "html to pdf",
+    "responsive paper"
+  ],
+  "scripts": {
+    "build": "jsreport-studio-build",
+    "test": "standard",
+    "start": "jsreport-studio-start --httpPort 5488 --extensions.responsivepaperPdf.apikey _YOUR_API_KEY_",
+    "prepublish": "in-publish && jsreport-studio-build || not-in-publish"
+  },
+  "standard": {
+    "ignore": [
+      "main.js"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "mocha": true,
+      "browser": true
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "in-publish": "^2.0.0",
+    "jsreport": "^2.6.1"
+  },
+  "author": "Charlie Knoll",
+  "devDependencies": {
+    "babel-eslint": "6.0.4",
+    "cron-builder": "0.3.0",
+    "cronstrue": "1.84.0",
+    "ordinal-number-suffix": "0.1.2",
+    "react-copy-to-clipboard": "5.0.2",
+    "eslint": "2.11.1",
+    "eslint-config-standard-jsx": "1.2.1",
+    "eslint-plugin-babel": "3.2.0",
+    "jsreport-studio-dev": "1.0.2",
+    "standard": "7.1.2"
+  },
+  "files": [
+    "lib",
+    "studio",
+    "index.js",
+    "jsreport.config.js"
+  ]
+}
